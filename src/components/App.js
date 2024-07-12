@@ -26,17 +26,17 @@ handleclick(){
             }
         }
         const total=strlength-count;
-        if (total%6==0) {
+        if (total%6==1) {
             this.setState({result:"Friends"});
-        }else if(total%6==1){
-            this.setState({result:"Love"});
         }else if(total%6==2){
-            this.setState({result:"Affection"});
+            this.setState({result:"Love"});
         }else if(total%6==3){
-            this.setState({result:"Marriage"});
+            this.setState({result:"Affection"});
         }else if(total%6==4){
-            this.setState({result:"Enemy"});
+            this.setState({result:"Marriage"});
         }else if(total%6==5){
+            this.setState({result:"Enemy"});
+        }else if(total%6==0){
             this.setState({result:"Siblings"});
         }
     }else{
