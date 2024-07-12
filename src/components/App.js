@@ -73,11 +73,11 @@ handleclear(){
     render() {
         return(
             <div id="main">
-                <input onChange={this.handlechangeinput1} data-testid="input1" value={this.state.inputarray[0]} type="text" placeholder="Enter first name" required/>
-                <input onChange={this.handlechangeinput2} data-testid="input2" value={this.state.inputarray[1]} type="text" placeholder="Enter second name" required/>
+                <input onChange={this.handlechangeinput1} data-testid="input1" value={this.state.inputarray[0]} type="text" name="name1" placeholder="Enter first name" required/>
+                <input onChange={this.handlechangeinput2} data-testid="input2" value={this.state.inputarray[1]} type="text" name="name2" placeholder="Enter second name" required/>
                <button onClick={this.handleclick} data-testid="calculate_relationship">Calculate Relationship Future</button>  
                <button onClick={this.handleclear} data-testid="clear">Clear</button>
-               <h3 data-testid="answer">{this.state.result} </h3>
+               <h3 data-testid="answer">{this.state.result}</h3>
                {/* Do not remove the main div */}
             </div>
         )
